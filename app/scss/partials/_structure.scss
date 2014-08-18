@@ -1,0 +1,306 @@
+/*------------------------------------*\
+    Structure
+\*------------------------------------*/
+ //====================================================================
+ // Structure styles, should only contain Site structure (header, nav, etc) 
+ //====================================================================
+/*
+   HEADER SECTION
+*/
+
+.header-section {
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.4);
+	position: fixed;
+	z-index: 999;
+	min-width: 100%;
+}
+
+.contain-to-grid {
+	background-color: rgba(255,255,255,0.97);
+}
+
+.header-fill {
+	background: #fff;
+	height: 135px;
+	.tablet-mobile-logo img {
+		padding-top:30px;
+	}
+}
+
+
+.full-width {
+	min-width: 100%;
+}
+
+
+/*
+BRANDS NAVIGATION
+========================================================================================*/
+.ha .title {
+  &:active, &:focus, &:hover {
+    color: rgb(87, 0, 77);
+  }
+}
+.ka .title {
+  &:active, &:focus, &:hover {
+    color: rgb(227, 24, 24);
+  }
+}
+
+.vg .title {
+  &:active, &:focus, &:hover {
+    color: rgb(38, 151, 155);
+  }
+}
+
+.fc .title {
+  &:active, &:focus, &:hover {
+    color: rgb(0, 55, 104);
+  }
+}
+
+.jva .title {
+  &:hover, &:active, &:focus {
+    color: rgb(205, 23, 25);
+  }
+}
+
+.di .title {
+  &:active, &:focus, &:hover {
+    color: rgb(106, 173, 61);
+  }
+}
+
+.vdz .title {
+  &:hover, &:active, &:focus {
+    color: rgb(0, 102, 164);
+  }
+}
+
+.at .title {
+  &:active, &:focus, &:hover {
+    color: rgb(254, 153, 0);
+  }
+}
+
+.brand {
+  float: left;
+  height: 3.846em;
+  .title {
+    display: inline-block;
+    padding-right: 1.071em;
+    padding-left: 0.714em;
+    font-size: 1.077em;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    &:active, &:hover {
+      visible: true;
+      width: auto;
+    }
+  }
+}
+
+.brand-column {
+  float: left;
+}
+
+.brands {
+  position: relative;
+  float: left;
+  z-index: 32;
+  width: 100%;
+  max-width: 1180px;
+  min-height: 4.846em;
+  margin-top: 0.615em;
+}
+
+.col1 {
+  width: 15.2542372881%;
+}
+
+.col3 {
+  width: 18.6440677966%;
+}
+
+.col2,
+.col4 {
+  width: 18.220338983%;
+}
+
+.col5 {
+  width: 12.7966101694%;
+}
+
+.columns {
+  width: 98.3333333333%;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+ 
+
+/*
+TOPBAR NAVIGATION
+========================================================================================*/
+.top-bar {
+	background: $color12;
+	padding:45px 0.9375rem 90px 0.9375rem;
+	transition: all 0.5s ease 0.1s;
+	//LOGO adjustment
+	ul.title-area img {
+		margin: -10px 0 0 0;
+	}
+	.top-bar-section ul {
+		background: $color12;
+		//MENU items styles
+		li a:not(.button), li.active a:not(.button) {
+			background: $color12;
+			line-height: 30px;
+			font-size: 12px;
+			padding: 0;
+			margin: 5px 0 0 0;
+			text-transform: uppercase;
+		}
+		//MENU items hovers
+		li a:not(.button):hover {
+			background: $color12;
+			border-bottom: 2px solid $color1;
+			color: $color11;
+		}
+		//MENU item active
+		li.active a:not(.button) {
+			border-bottom: 2px solid $color1;
+			color: $color11;
+			&:hover {
+				background: $color12;
+			}
+		}
+		li  {
+			margin-left: 30px;
+			background:$color12;
+			a {
+				color:#888;
+			}
+		}
+	}
+
+	//DROPDOWN menu
+	.top-bar-section ul li:hover:not(.has-form) > a {
+		color:$color11;
+	}
+	.top-bar-section li ul.dropdown {
+		background: $color12;
+		border: 1px solid $color12-dark15;
+		color:#888;
+		li {
+			border-bottom: 1px solid $color12-dark15;
+			margin: 0;
+			padding: 5px 15px 5px 15px;
+		}
+	}
+	.top-bar-section li ul.dropdown li a:not(.button):hover, 
+	.top-bar-section li ul.dropdown li a:not(.button) {
+		background: $color12;
+		color:$color11;
+		border-bottom: none;
+		padding: 20px -4px 40px 45px;
+	}
+	.top-bar-section ul.dropdown li:hover:not(.has-form) > a:not(.button) {
+		background: $color12;
+		color:$color11;
+	}
+	//DROPDOWN ARROW
+	.has-dropdown > a:after {
+		border-color: rgba(0,0,0,0.5) transparent transparent;
+		margin-top: -5px;
+		border-image: none;
+	}
+
+
+}
+
+.padding-on-my-header {
+	padding: 17px 0.9375rem 62px 0.9375rem;
+	ul.title-area img {
+		margin: -5px 0 0 0;
+	}
+}
+
+@include MQ(Mneg) {
+	.top-bar {
+		margin-top: 0;
+		padding: 0;
+		float:none;
+		//MENU Button and HAMBURGER icon: 
+		.toggle-topbar.menu-icon a {
+			color: $color11;
+			&:after {
+				box-shadow: 0 10px 0 1px $color11, 0 16px 0 1px $color11, 0 22px 0 1px $color11;
+			}
+		}
+		//LOGO
+		ul.title-area img {
+			margin: -2px 0 0;
+			width: 145px;
+		}
+		.top-bar-section {
+			ul {
+				background: $color11-light5;
+				li {
+					margin-left: 0;
+				}
+				li > a {
+					background: $color1;
+					border-radius: 0;
+					font-size: 0.9rem;
+				}
+				//NORMAL buttons
+				li:not(.has-form) a:not(.button) {
+					background: $color11-light5;
+					color:$color12;
+					padding: 10px 15px;
+					margin-top: 0;
+					&:hover {
+						background: $color1;
+						color:$color12;
+						margin-top: 0;
+					}
+
+				}
+				//ACTIVE button
+				li.active:not(.has-form) a:not(.button) {
+					background: $color1;
+					color:$color12;
+					padding: 10px 15px;
+					margin-top: 0;
+					&:hover {
+						background: $color1-light5;
+						margin-top: 0;	
+					}
+				}
+			}
+		}
+	}
+	//EXPAND topbar menu
+	.top-bar.expanded {
+		margin-top: 0;
+		padding: 0;
+		float: none;
+		.toggle-topbar.menu-icon a {
+			color: $color12;
+			&:after {
+				box-shadow: 0 10px 0 1px $color12, 0 16px 0 1px $color12, 0 22px 0 1px $color12;
+
+
+			}
+		}	
+	}
+	//SMALLER header
+	.header-fill {
+		height: 40px;
+	}
+	
+}

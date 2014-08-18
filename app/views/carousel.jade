@@ -1,0 +1,16 @@
+extends layout/layout
+include mixins/placeholders
+block content
+	#owl-example.owl-carousel
+		.item
+			img.lazyOwl(data-src='images/banner-large.gif', alt='blaa')
+			span.caption
+				| Caption One.
+		.item
+			img.lazyOwl(data-src='images/banner-medium.gif', alt='blaa')
+			span.caption
+				| Caption Two.
+		.item
+			img.lazyOwl(data-src='images/banner-small.gif', alt='blaa')
+			span.caption
+				| Caption Tree.

@@ -1,0 +1,164 @@
+<!DOCTYPE html><!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js ie" lang="en"> <![endif]-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation 5</title>	<!--[if lt IE 9]>
+    		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    		<script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+    		<script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+    		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    	<![endif]-->
+    <!-- build:css(.tmp) styles/libraries.css-->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <!-- endbuild-->
+    <!-- build:css(.tmp) styles/app.css-->
+    <link rel="stylesheet" href="styles/app.css">
+    <!-- endbuild-->
+  </head>
+  <body>
+    <nav class="top-bar">
+      <ul class="title-area">
+        <li class="name">
+          <h1><i class="fa fa-home fa-fw"><a href="index.html">ChicksRule</a></i></h1>
+        </li>
+      </ul>
+      <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="parallax.html">parallax</a></li>
+          <li><a href="carousel.html">carousel</a></li>
+          <li><a href="child.html">child</a></li>
+          <li><a href="#">Top Chicks</a></li>
+        </ul>
+      </section>
+    </nav>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color1"><code>$color1-dark10 = darken($color1, 10%); = #240020</code></div>
+      <div class="small-12 large-12 columns color1"><code>$color1-dark5 = darken($color1, 5%); = #3E0037</code></div>
+      <div class="small-12 large-12 columns color1"><code>$color1: #57004e; = #57004E</code></div>
+      <div class="small-12 large-12 columns color1"><code>$color1-light5: lighten($color1, 5%); = #710065</code></div>
+      <div class="small-12 large-12 columns color1"><code>$color1-light10: lighten($color1, 10%); = #8A007C</code></div>
+      <div class="small-12 large-12 columns color1"><code>$color1-light15: lighten($color1, 15%); = #A40093</code></div>
+      <div class="small-12 large-12 columns color1"><code>$color1-light20: lighten($color1, 20%); = #BD00A9</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color2"><code>$color2-dark1; = darken($color2, 10%); = #FFBF1A</code></div>
+      <div class="small-12 large-12 columns color2"><code>$color2-dark5; = darken($color2, 5%); = #FFC633</code></div>
+      <div class="small-12 large-12 columns color2"><code>$color2; = #FFCD4D</code></div>
+      <div class="small-12 large-12 columns color2"><code>$color2-light5; = lighten($color2, 5%); = #FFD466</code></div>
+      <div class="small-12 large-12 columns color2"><code>$color2-light10; = lighten($color2, 10%); = #FFDB80</code></div>
+      <div class="small-12 large-12 columns color2"><code>$color2-light15; = lighten($color2, 15%); = #FFE29A</code></div>
+      <div class="small-12 large-12 columns color2"><code>$color2-light20; = lighten($color2, 20%); = #FFEAB3</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color3"><code>$color3-dark10: darken($color3, 10%); = #A32929</code></div>
+      <div class="small-12 large-12 columns color3"><code>$color3-dark5: darken($color3, 5%); = #B82E2E</code></div>
+      <div class="small-12 large-12 columns color3"><code>$color3; = #CC3333</code></div>
+      <div class="small-12 large-12 columns color3"><code>$color3-light5: lighten($color3, 5%); = #D14747</code></div>
+      <div class="small-12 large-12 columns color3"><code>$color3-light10: lighten($color3, 10%); = #D65C5C</code></div>
+      <div class="small-12 large-12 columns color3"><code>$color3-light15: lighten($color3, 15%); = #DB7070</code></div>
+      <div class="small-12 large-12 columns color3"><code>$color3-light20: lighten($color3, 20%); = #E08585</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color4"><code>$color4-dark10: darken($color4, 10%); = #197612</code></div>
+      <div class="small-12 large-12 columns color4"><code>$color4-dark5: darken($color4, 5%); = #1D8C16</code></div>
+      <div class="small-12 large-12 columns color4"><code>$color4; = #22A219</code></div>
+      <div class="small-12 large-12 columns color4"><code>$color4-light5: lighten($color4, 5%); = #27B81C</code></div>
+      <div class="small-12 large-12 columns color4"><code>$color4-light10: lighten($color4, 10%); = #2BCE20</code></div>
+      <div class="small-12 large-12 columns color4"><code>$color4-light15: lighten($color4, 15%); = #35DE29</code></div>
+      <div class="small-12 large-12 columns color4"><code>$color4-light20: lighten($color4, 20%); = #4AE140</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color5"><code>$color5-dark10: darken($color5, 10%); = #0184FF</code></div>
+      <div class="small-12 large-12 columns color5"><code>$color5-dark5: darken($color5, 5%); = #1B91FF</code></div>
+      <div class="small-12 large-12 columns color5"><code>$color5; = #349DFF</code></div>
+      <div class="small-12 large-12 columns color5"><code>$color5-light5: lighten($color5, 5%); = #4DA9FF</code></div>
+      <div class="small-12 large-12 columns color5"><code>$color5-light10: lighten($color5, 10%); = #67B6FF</code></div>
+      <div class="small-12 large-12 columns color5"><code>$color5-light15: lighten($color5, 15%); = #80C2FF</code></div>
+      <div class="small-12 large-12 columns color5"><code>$color5-light20: lighten($color5, 20%); = #9ACEFF</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color6"><code>$color6-dark10: darken($color6, 10%); = #C27614</code></div>
+      <div class="small-12 large-12 columns color6"><code>$color6-dark5: darken($color6, 5%); = #D98416</code></div>
+      <div class="small-12 large-12 columns color6"><code>$color6; = #E89121</code></div>
+      <div class="small-12 large-12 columns color6"><code>$color6-light5: lighten($color6, 5%); = #EA9C38</code></div>
+      <div class="small-12 large-12 columns color6"><code>$color6-light10: lighten($color6, 10%); = #EDA84F</code></div>
+      <div class="small-12 large-12 columns color6"><code>$color6-light15: lighten($color6, 15%); = #EFB366</code></div>
+      <div class="small-12 large-12 columns color6"><code>$color6-light20: lighten($color6, 20%); = #F2BF7D</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color7"><code>$color7-dark10: darken($color7, 10%); = #00CCCC</code></div>
+      <div class="small-12 large-12 columns color7"><code>$color7-dark5: darken($color7, 5%); = #00E5E6</code></div>
+      <div class="small-12 large-12 columns color7"><code>$color7; = #00FFFF</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color8"><code>$color8-dark10: darken($color8, 10%); = #0000CC</code></div>
+      <div class="small-12 large-12 columns color8"><code>$color8-dark5: darken($color8, 5%); = #0000E6</code></div>
+      <div class="small-12 large-12 columns color8"><code>$color8; = #0000FF</code></div>
+      <div class="small-12 large-12 columns color8"><code>$color8-light5: lighten($color8, 5%); = #1A1AFF</code></div>
+      <div class="small-12 large-12 columns color8"><code>$color8-light10: lighten($color8, 10%); = #3333FF</code></div>
+      <div class="small-12 large-12 columns color8"><code>$color8-light15: lighten($color8, 15%); = #4D4DFF</code></div>
+      <div class="small-12 large-12 columns color8"><code>$color8-light20: lighten($color8, 20%); = #6666FF</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color9"><code>$color9-dark10: darken($color9, 10%); = #6600CC</code></div>
+      <div class="small-12 large-12 columns color9"><code>$color9-dark5: darken($color9, 5%); = #7200E6</code></div>
+      <div class="small-12 large-12 columns color9"><code>$color9; = #7F00FF</code></div>
+      <div class="small-12 large-12 columns color9"><code>$color9-light5: lighten($color9, 5%); = #8C1AFF</code></div>
+      <div class="small-12 large-12 columns color9"><code>$color9-light10: lighten($color9, 10%); = #9933FF</code></div>
+      <div class="small-12 large-12 columns color9"><code>$color9-light15: lighten($color9, 15%); = #A54DFF</code></div>
+      <div class="small-12 large-12 columns color9"><code>$color9-light20: lighten($color9, 20%); = #B266FF</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color10"><code>$color10-dark10: darken($color10, 10%); = #CC00CC</code></div>
+      <div class="small-12 large-12 columns color10"><code>$color10-dark5: darken($color10, 5%); = #E600E5</code></div>
+      <div class="small-12 large-12 columns color10"><code>$color10; = #FF00FF</code></div>
+      <div class="small-12 large-12 columns color10"><code>$color10-light5: lighten($color10, 5%); = #FF1AFF</code></div>
+      <div class="small-12 large-12 columns color10"><code>$color10-light10: lighten($color10, 10%); = #FF33FF</code></div>
+      <div class="small-12 large-12 columns color10"><code>$color10-light15: lighten($color10, 15%); = #FF4DFF</code></div>
+      <div class="small-12 large-12 columns color10"><code>$color10-light20: lighten($color10, 20%); = #FF66FF</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color11"><code>$color11-dark10: darken($color11, 10%); = #1A1A1A</code></div>
+      <div class="small-12 large-12 columns color11"><code>$color11-dark5: darken($color11, 5%); = #262626</code></div>
+      <div class="small-12 large-12 columns color11"><code>$color11; = #333333</code></div>
+      <div class="small-12 large-12 columns color11"><code>$color11-light5: lighten($color11, 5%); = #404040</code></div>
+      <div class="small-12 large-12 columns color11"><code>$color11-light10: lighten($color11, 10%); = #4D4D4D</code></div>
+      <div class="small-12 large-12 columns color11"><code>$color11-light15: lighten($color11, 15%); = #595959</code></div>
+      <div class="small-12 large-12 columns color11"><code>$color11-light20: lighten($color11, 20%); = #666666</code></div>
+      <hr>
+    </div>
+    <div class="row colorPalette">
+      <div class="small-12 large-12 columns color12"><code>$color12; = #FFFFFF</code></div>
+      <div class="small-12 large-12 columns color12"><code>$color12-dark5: darken($color12, 5%); = #F2F2F2</code></div>
+      <div class="small-12 large-12 columns color12"><code>$color12-dark10: darken($color12, 10%); = #E6E6E6</code></div>
+      <div class="small-12 large-12 columns color12"><code>$color12-dark15: darken($color12, 15%); = #D9D9D9</code></div>
+      <div class="small-12 large-12 columns color12"><code>$color12-dark20: darken($color12, 20%); = #CCCCCC</code></div>
+    </div>
+    	<!-- ref:remove -->
+    		<script data-main="js/config" src="bower_components/requirejs/require.js"></script>
+    	<!-- endref -->
+    	<!-- build:js({app,.tmp}) scripts/main.js -->
+    	<!--<script src="../dist/scripts/main.js"></script>-->
+    	<!-- endbuild -->
+    	<!-- build:js scripts/vendor/skrollr.ie.min.js -->
+    	<!--[if lt IE 9]>
+    		<script src="bower_components/skrollr-ie/dist/skrollr.ie.min.js"></script>
+    	<![endif]-->
+    	<!-- endbuild -->
+  </body>
+</html>

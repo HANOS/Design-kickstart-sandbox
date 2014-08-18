@@ -1,0 +1,139 @@
+/*------------------------------------*\
+    VARIABLES
+\*------------------------------------*/
+/* Colorzzz */
+/*Type*/
+/*Dimensions*/
+/*Breakpoints*/
+/*Animation*/
+
+$color1: #57004E; // Purple
+$color2: #FFCD4D; // Yellow
+$color3: #CC3333; // Red
+$color4: #22A219; // Green
+$color5: #349DFF; // Blue
+$color6: #E89121; // Orange
+
+$color7: #00FFFF; // Cyan
+$color8: #0000FF; // Blue
+$color9: #7F00FF; // Purple
+$color10: #FF00FF; // Magenta
+$color11: #333; // Almost Black
+$color12: #FFF; // White
+
+$color1-dark5: darken($color1, 5%);
+$color1-dark10: darken($color1, 10%);
+$color1-light5: lighten($color1, 5%);
+$color1-light10: lighten($color1, 10%);
+$color1-light15: lighten($color1, 15%);
+$color1-light20: lighten($color1, 20%);
+
+$color2-dark5: darken($color2, 5%);
+$color2-dark10: darken($color2, 10%);
+$color2-light5: lighten($color2, 5%);
+$color2-light10: lighten($color2, 10%);
+$color2-light15: lighten($color2, 15%);
+$color2-light20: lighten($color2, 20%);
+
+$color3-dark5: darken($color3, 5%);
+$color3-dark10: darken($color3, 10%);
+$color3-light5: lighten($color3, 5%);
+$color3-light10: lighten($color3, 10%);
+$color3-light15: lighten($color3, 15%);
+$color3-light20: lighten($color3, 20%);
+
+$color4-dark5: darken($color4, 5%);
+$color4-dark10: darken($color4, 10%);
+$color4-light5: lighten($color4, 5%);
+$color4-light10: lighten($color4, 10%);
+$color4-light15: lighten($color4, 15%);
+$color4-light20: lighten($color4, 20%);
+
+$color5-dark5: darken($color5, 5%);
+$color5-dark10: darken($color5, 10%);
+$color5-light5: lighten($color5, 5%);
+$color5-light10: lighten($color5, 10%);
+$color5-light15: lighten($color5, 15%);
+$color5-light20: lighten($color5, 20%);
+
+$color6-dark5: darken($color6, 5%);
+$color6-dark10: darken($color6, 10%);
+$color6-light5: lighten($color6, 5%);
+$color6-light10: lighten($color6, 10%);
+$color6-light15: lighten($color6, 15%);
+$color6-light20: lighten($color6, 20%);
+
+$color7-dark5: darken($color7, 5%);
+$color7-dark10: darken($color7, 10%);
+
+$color8-dark5: darken($color8, 5%);
+$color8-dark10: darken($color8, 10%);
+$color8-light5: lighten($color8, 5%);
+$color8-light10: lighten($color8, 10%);
+$color8-light15: lighten($color8, 15%);
+$color8-light20: lighten($color8, 20%);
+
+$color9-dark5: darken($color9, 5%);
+$color9-dark10: darken($color9, 10%);
+$color9-light5: lighten($color9, 5%);
+$color9-light10: lighten($color9, 10%);
+$color9-light15: lighten($color9, 15%);
+$color9-light20: lighten($color9, 20%);
+
+$color10-dark5: darken($color10, 5%);
+$color10-dark10: darken($color10, 10%);
+$color10-light5: lighten($color10, 5%);
+$color10-light10: lighten($color10, 10%);
+$color10-light15: lighten($color10, 15%);
+$color10-light20: lighten($color10, 20%);
+
+$color11-dark5: darken($color11, 5%);
+$color11-dark10: darken($color11, 10%);
+$color11-light5: lighten($color11, 5%);
+$color11-light10: lighten($color11, 10%);
+$color11-light15: lighten($color11, 15%);
+$color11-light20: lighten($color11, 20%);
+
+$color12-dark5: darken($color12, 5%);
+$color12-dark10: darken($color12, 10%);
+$color12-dark15: darken($color12, 15%);
+$color12-dark20: darken($color12, 20%);
+
+// Fonts
+//$blockquote: Lato, "Lato", "Helvetica", Helvetica, Arial, sans-serif;
+
+// Mixin variables
+$defined-bs-type: border-box !default;
+
+// Breakpoint variables
+// ====================================================================
+$XS: 18em; // roughly speaking, around 288px wide with 16px body font
+$S: 30em; // roughly speaking, around 480px wide with 16px body font
+/* $M: 43em; // roughly speaking, around 688px wide with 16px body font
+$L: 57em; // roughly speaking, around 912px wide with 16px body font
+$XL: 90em; // roughly speaking, around 1456px wide with 16px body font
+ */
+$M: 64em; // roughly speaking, around 688px wide with 16px body font
+$L: 90em; // roughly speaking, around 912px wide with 16px body font
+$XL: 120em; // roughly speaking, around 1456px wide with 16px body font
+
+// Default values for text-shadow mixin
+// ====================================================================
+
+$default-text-shadow-color: darken($color11,20%);
+$default-text-shadow-blur: 0px;
+$default-text-shadow-v-offset: 4px;
+$default-text-shadow-h-offset: 3px;
+
+// Default values for box-shadow mixin
+// ====================================================================
+$default-box-shadow-color: lighten($color10, 50%);
+$default-box-shadow-h-offset: 1px;
+$default-box-shadow-v-offset: 1px;
+$default-box-shadow-blur: 2px;
+$default-box-shadow-spread: false;
+$default-box-shadow-inset: false;
+
+// Default value for border-radius
+// ====================================================================
+$default-border-radius: 5px;

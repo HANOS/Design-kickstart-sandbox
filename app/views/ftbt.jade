@@ -1,0 +1,90 @@
+extends layout/layout2
+include mixins/placeholders
+#HEADER SECTION
+block header
+  //
+    HEADER SECTION
+  .contain-to-grid.header-section
+    //
+      TOPBAR SECTION
+    nav.top-bar.important-class(data-topbar)
+      //
+        TITLE AREA AND LOGO
+      ul.title-area
+        li.name
+          img#logo-image.logo(src="images/hanosLogo.svg", alt="Logo")
+        li.toggle-topbar.menu-icon
+          a(href="#")
+            span menu
+      section.top-bar-section
+        ul.right
+          li
+            a(href="parallax.html") parallax
+          li
+            a(href="carousel.html") carousel
+          li
+            a(href="child.html") child
+          li
+            a(href="#") Top Chicks
+          li.has-dropdown
+            a(href="#") Services
+            ul.dropdown
+              li
+                a(href="#") Service 01
+              li
+                a(href="#") Service 02
+              li
+                a(href="#") Service 03   
+          li
+            a(href="#") Top Women
+  .header-fill
+block content
+  //
+    MAIN SECTION 
+  .row.content-section
+    .main-content
+      .small-12.medium-12.large-12.columns
+          mixin kitten(980,300,0,'cuteKitten')
+      .small-8.medium-8.large-8.columns
+          .panel
+              h2 Welkom to ChicksRock.info!
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae hic, eum eligendi magni illum? Provident sapiente aperiam, modi, voluptatum, fuga officiis cumque, adipisci veritatis optio illo voluptate cum eos deleniti.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum excepturi et maiores corporis nisi veritatis quaerat dignissimos sapiente ipsam, eos, veniam, accusantium officia repellat dolor rerum tempore delectus enim minima!
+              p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ex sapiente fugiat earum voluptatem laudantium optio reiciendis iste voluptatum veniam doloremque qui totam natus culpa ab distinctio deserunt, commodi cum.
+              a.button.round(href="#") Find out more
+      .small-4.medium-4.large-4.columns
+          img(src="images/chick001.jpg", alt="chick001")
+  hr
+  //
+    END SECTION.MAIN-SECTION 
+  //
+    FOOTER SECTION 
+  footer
+    .row
+      .small-12.medium-4.large-4.columns
+        h4 Foundation
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, veniam, asperiores fugit quas quaerat soluta in quibusdam placeat incidunt suscipit esse neque quisquam eaque rem!
+      .small-12.medium-4.large-4.columns
+        h4 Foundation
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, veniam, asperiores fugit quas quaerat soluta in quibusdam placeat incidunt suscipit esse neque quisquam eaque rem!
+      .small-12.medium-4.large-4.columns
+        h4 Foundation
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, veniam, asperiores fugit quas quaerat soluta in quibusdam placeat incidunt suscipit esse neque quisquam eaque rem!
+    //
+      END ROW 
+  //
+    END FOOTER 
+  //
+    COPYRIGHT SECTION 
+  section.full-width.copyright-section
+    .row
+      .small-12.columns
+        p © 2014
+      //
+        END 12 COLUMNS 
+    //
+      END ROW 
+  //
+    END SECTION.FULL-WIDTH COPYRIGHT-SECTION 

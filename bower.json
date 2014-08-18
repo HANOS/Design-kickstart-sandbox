@@ -1,0 +1,22 @@
+{
+  "name": "hanos",
+  "version": "0.0.0",
+  "dependencies": {
+    "foundation": ">=5.0.3",
+    "font-awesome": "~4.1.0",
+    "requirejs": "~2.1.11",
+    "almond": "~0.2.9",
+    "handlebars": "~1.3.0",
+    "underscore": "~1.6.0",
+    "bower-skrollr": "~0.6.21",
+    "enquire": "~2.1.1",
+    "imagesloaded": "~3.1.8",
+    "eventie": "~1.0.5",
+    "eventEmitter": "~4.2.7",
+    "REM-unit-polyfill": "~1.3.2",
+    "jquery": "1.11.1",
+    "OwlCarousel": "~1.3.2",
+    "skrollr-ie": "~1.0.3"
+  },
+  "devDependencies": {}
+}

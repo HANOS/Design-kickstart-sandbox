@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation 5</title>
+    <!-- build:css(.tmp) styles/libraries.css-->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <!-- endbuild-->
+    <!-- build:css(.tmp) styles/app.css-->
+    <link rel="stylesheet" href="styles/app.css">
+    <!-- endbuild-->
+  </head>
+  <body>
+    <div class="row">
+      <div class="small-12 small-centered medium-10 medium-centered large-8 large-centered columns panel radius">
+        <h1>Yo Foundation 5!</h1>
+        <ul>
+          <li>Sass compiling (Ruby or Node/Libsass)</li>
+          <li>Jade templating engine (option)</li>
+          <li>Publishing to dist directory</li>
+          <li>Server with LiveReload</li>
+          <li>JSHint</li>
+          <li>Grunt Bower install</li>
+          <li>Imagemin</li>
+          <li>Font Awesome (option)</li>
+        </ul>
+        <h1>Grunt tasks:</h1>
+        <ul>
+          <li>'grunt' - watching (Sass, Server on 127.0.0.1:9000 with LiveReload)</li>
+          <li>'grunt compile-sass' - Sass</li>
+          <li>'grunt compile-jade' - Jade</li>
+          <li>'grunt validate-js' - JSHint</li>
+          <li>'grunt bower-install' - injecting bower libraries</li>
+          <li>'grunt publish' - dist directory</li>
+          <li>'grunt server-dist' - server on 127.0.0.1:9001 - dist directory (preview only)</li>
+        </ul>
+        <h2 class="text-right"><a href="https://github.com/juliancwirko/generator-zf5"><i class="fa fa-twitter"></i></a></h2>
+        <h3 class="test"><a href="#">'link'</a>
+          <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>tree</li>
+          </ul>
+        </h3>
+      </div>
+    </div>
+    <p>this is the text that replaced</p>the replacable text
+  </body>
+  <!-- ref:remove -->
+  <script data-main="js/config" src="bower_components/requirejs/require.js"></script>
+  <!-- endref -->
+  <!-- build:js({app,.tmp}) scripts/main.js -->
+  <!--<script src="../dist/scripts/main.js"></script>-->
+  <!-- endbuild -->
+</html>

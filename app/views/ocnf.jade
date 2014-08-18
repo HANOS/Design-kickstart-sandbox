@@ -1,0 +1,194 @@
+extends layout/layout2
+include mixins/placeholders
+#HEADER SECTION
+block header
+    //
+       HEADER SECTION 
+    header
+      .row
+        .small-12.medium-12.large-12.columns
+          .logo 
+            h1 Foundation 5 Topbar / Offcanvas menu
+          //
+             END DIV.LOGO 
+        //
+           END 12 COLUMNS 
+      //
+         END ROW 
+    //
+       END HEADER 
+    //
+       LARGE SCREEN TOPBARMENU
+    section.navigation-selection.show-for-large-up
+      .row
+        .large-12.columns
+          // TOP bar initialization
+          nav.top-bar(data-topbar)
+            ul.title-area
+              li.name
+                h1
+            //
+              TOP BAR MENU ELEMENTS
+            section.top-bar-section
+              ul.left
+                li.active
+                  a(href="index.html") Home
+                li.has-dropdown
+                  a(href="parallax.html") Parallax
+                  ul.dropdown
+                    li
+                      a(href="#") page 01
+                    li
+                      a(href="#") page 02
+                li
+                  a(href="carousel.html") carousel
+                li
+                  a(href="child.html") child
+                li
+                  a(href="#") Top Chicks
+                li.has-dropdown
+                  a(href="#") Services
+                  ul.dropdown
+                    li
+                      a(href="#") Service 01
+                    li
+                      a(href="#") Service 02
+                    li
+                      a(href="#") Service 03   
+                li
+                  a(href="#") Top Women
+block content
+    //
+       OFF CANVAS SECTION WRAPPING THE MAIN CONTENT
+    .off-canvas-wrap(data-offcanvas)
+      .inner-wrap
+        //
+          OFF CANVAS MENU BAR
+        nav.tab-bar.hide-for-large-up
+          section.left-small
+            a.left-off-canvas-toggle.menu-icon(href="#")
+              span
+          section.right.tab-bar-section
+            h1.title Menu
+        // 
+          OFF CANVAS MENU
+        aside.left-off-canvas-menu
+          ul.off-canvas-list
+            li
+              label Navigation
+            li
+              a(href="index.html") Home
+          ul.off-canvas-list
+              li.has-dropdown
+                a(href="parallax.html") Parallax
+                ul.off-canvas-list
+                  li
+                    a(href="#") page 01
+                  li
+                    a(href="#") page 02
+          ul.off-canvas-list
+            li
+              a(href="carousel.html") carousel
+          ul.off-canvas-list
+            li
+              a(href="child.html") child
+          ul.off-canvas-list
+            li
+              a(href="#") Top Chicks
+          ul.off-canvas-list
+            li.has-dropdown
+              a(href="#") Services
+              ul.off-canvas-list
+                li
+                  a(href="#") Service 01
+                li
+                  a(href="#") Service 02
+                li
+                  a(href="#") Service 03
+          ul.off-canvas-list   
+            li
+              a(href="#") Top Women
+
+        //
+          MAIN SECTION 
+        section.main-section
+          //
+            CONTENT SECTION 
+          section.full-width.content-section
+            .row
+              .small-12.medium-12.large-12.columns
+                h2 Moving aside for the Offcanvas people!
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, minus molestias dolores blanditiis esse? Quam, accusamus, quo, eum, ipsum voluptatibus aliquam perspiciatis qui porro est sit eligendi suscipit. Expedita, eligendi, laboriosam animi itaque accusantium repudiandae dicta ullam quia ipsum amet quam nesciunt non! Porro, fuga molestiae quaerat accusantium nesciunt omnis.
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, minima, quidem repellendus facilis dignissimos laboriosam doloribus sequi tempora iusto facere maxime quasi est ex qui commodi nobis aliquid id eius magnam consectetur. Ut deserunt repellat asperiores dolores odio! Incidunt, esse, distinctio modi ratione facilis iusto tempora saepe nisi nostrum culpa velit eaque quos dolore repellat facere accusamus architecto iure similique numquam autem asperiores error cumque eum. Dolor, minima aspernatur autem eaque ipsa officiis rem! Suscipit, esse, quos. Quos, perferendis, iure nobis modi perspiciatis enim error nulla asperiores dignissimos harum. Dolor, non rem in nobis illum id hic laboriosam blanditiis aliquid!
+              //
+                END 12 COLUMNS 
+            //
+              END ROW 
+          //
+            END SECTION.CONTENT-SECTION 
+          //
+            SERVICES SECTION 
+          section.full-width.services-section
+            .row
+              .small-12.medium-4.large-4.columns
+                h3 Service #1
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, veniam, asperiores fugit quas quaerat soluta in quibusdam placeat incidunt suscipit esse neque quisquam eaque rem!
+              .small-12.medium-4.large-4.columns
+                h3 Service #3
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, nihil nemo tempore voluptatum veritatis corrupti id doloremque. Saepe, in sequi voluptatem impedit rem omnis aliquam?
+              .small-12.medium-4.large-4.columns
+                h3 Service #3
+                p
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate ducimus aut commodi eius! Sequi, magni labore ea iusto quibusdam autem repellendus ipsum dolorem quasi maxime!
+            //
+              END ROW 
+          //
+            END SECTION.FULL-WIDTH.SERVICES-SECTION 
+          //
+            CALL 2 ACTION 
+          section.full-width.call-to-action
+            .row
+              .small-12.medium-12.large-12.columns
+                a.button.radius(href='#') Get in touch with us!
+        //
+          END SECTION.MAIN-SECTION 
+        //
+          CLOSE THE OFF CANVAS MENU
+        a.exit-off-canvas
+    
+    //
+      FOOTER SECTION 
+    footer
+      .row
+        .small-12.medium-4.large-4.columns
+          h4 Foundation
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, veniam, asperiores fugit quas quaerat soluta in quibusdam placeat incidunt suscipit esse neque quisquam eaque rem!
+        .small-12.medium-4.large-4.columns
+          h4 Foundation
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, veniam, asperiores fugit quas quaerat soluta in quibusdam placeat incidunt suscipit esse neque quisquam eaque rem!
+        .small-12.medium-4.large-4.columns
+          h4 Foundation
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, veniam, asperiores fugit quas quaerat soluta in quibusdam placeat incidunt suscipit esse neque quisquam eaque rem!
+      //
+        END ROW 
+    //
+      END FOOTER 
+    //
+      COPYRIGHT SECTION 
+    section.full-width.copyright-section
+      .row
+        .small-12.columns
+          p © 2014
+        //
+          END 12 COLUMNS 
+      //
+        END ROW 
+    //
+      END SECTION.FULL-WIDTH COPYRIGHT-SECTION 
