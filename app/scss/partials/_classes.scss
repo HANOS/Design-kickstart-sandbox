@@ -1,12 +1,61 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+
+/* * { */
+  /* http:/paulirish.com/2012/box-sizing-border-box-ftw/ */
+  /* -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
+} */
+
+/* html, body,  */
+/* div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
+ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0; 
+} */
+
+
+
+/* table {
+  border-collapse: collapse;
+  border-spacing: 0; 
+} */
+
+/* header, footer, nav, section, article, hgroup, figure {
+  display: block; 
+} */
+
 
 /*------------------------------------*\
     GLOBAL
 \*------------------------------------*/
 
-body, html {
+/* body, html {
   height: 100%;
   min-height: 100%;
   background-color: #fff;
+  font: 400 13px/1.4 $font1;
+  background-color: $color12;
+  color: $color11;
+} */
+
+a {
+  color:$color11;
+  outline: 0;
+  text-decoration: none; 
+  &:hover, &:focus {
+    color: $color11; 
+  }
+}
+
+i {
+  font-style:normal;
+}
+
+ol, ul {
+  list-style: none; 
 }
 
 
@@ -62,6 +111,15 @@ body, html {
 
 .cf:after {
   clear: both; 
+}
+
+.row {
+  max-width:1180px;
+}
+
+.columns {
+  padding-left:0.769em;
+  padding-right:0.769em;
 }
 
 

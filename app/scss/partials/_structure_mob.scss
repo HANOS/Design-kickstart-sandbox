@@ -1,0 +1,435 @@
+/*------------------------------------*\
+  Structure mob
+\*------------------------------------*/
+
+//====================================================================
+// Structure styles, should only contain Site structure (header, nav, etc) 
+//====================================================================
+
+/*
+RESET STYLES
+*/
+
+@media(max-width: 768px) {
+  footer {
+    a {
+      color:$color11;
+      &:hover,&:active,&:focus {
+        color:$color11;
+      }
+    }
+  }
+
+  .mob-container {
+    position: relative;
+    float: left;
+    width: 100%; 
+    background-color:$color12;
+  }
+
+  .border-right {
+    border-right: 0.077em solid $color12-dark20;
+    }
+  /*
+HEADER HANOS
+========================================================================================*/
+  header.mob-header {
+    position: relative;
+    float: left;
+    width: 100%;
+    section.mob-header-main {
+      background-color: $color1;
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 10.769em;
+        margin: 0 auto;
+        padding:0.462em 0 0;
+        .logo-image {
+          float: left;
+          width: 10.769em;
+          height:3.077em;
+        }
+      }
+      .shopping-chart {
+
+        .shopping-chart-image {
+          margin: 0 auto;
+          padding: 0.769em 0;
+          display: block;
+        }
+      }
+    }
+    section.mob-header-search {
+      float: left;
+      clear: both;
+      width: 100%;
+      padding: 1.538em 0;
+      background-color: $color12;
+      .search-form {
+        width: 100%;
+        height: 2.462em;
+        border: 0.077em solid $color12-dark10;
+      }
+      .search-input {
+        display: inline-block;
+        width: 84.8510221852%;
+        height: 2.154em;
+        padding: 0 0.769em;
+        color: $color11-light20;
+        border: none;
+        box-shadow: none;
+        background-color: $color12;
+        margin: 0;
+        &:hover, &:active, &:focus {
+          background-color: $color12;
+        }
+      }
+      .search-button {
+        display: inline-block;
+        float: right;
+        width: 8.42%;
+        min-width:2.308em;
+        height: 1.692em;
+        background-color: $color12-dark15;
+        font: normal 1.385em / 1 "FontAwesome";
+        text-align: center;
+        color: darken($color12, 35%);
+        padding: 0 0.384em;
+        margin: 0;
+      }
+    }
+  }
+/*
+OFF-CANVAS MENUS HANOS
+========================================================================================*/
+  aside.left-off-canvas-menu, aside.right-off-canvas-menu {
+    top:9.231em;
+    label {
+      font-family:$font2;
+    }
+    ul.off-canvas-list {
+      li {
+        &:last-child {
+          a {
+            border-bottom:none;
+          }
+        }
+        a {
+          font-size: 1.231em;
+        }
+      } 
+    }
+  }
+
+
+
+/*
+CONTENT HANOS
+========================================================================================*/
+  .btn-scroll-up {
+    float: left;
+    width: 100%;
+    height: 3.846em;
+    margin-top: 104.231em;
+  }
+
+  .btn-scroll-up-link,
+  .desktop-button-link {
+    display: block;
+    width: 15.188em;
+    margin: 0.875em auto 0;
+    font-size: 1.231em;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(51, 51, 51);
+  }
+
+/*
+FOOTER HANOS
+========================================================================================*/
+  footer.mob-footer-menu {
+    float: left;
+    clear: both;
+    width: 100%;
+    background-color: rgba($color12-dark10, 0.1);
+    box-shadow: 0 -2px 3px rgba(darken($color11,40), 0.15) inset, 0 2px 3px rgba(darken($color11,40), 0.15) inset;
+    .items {
+      float: left;
+      width: 100%;
+     .border-right {
+        padding-right: 0.769em;
+      }
+      .item {
+        float: left;
+        width: 50%;
+        height: 100%;
+        border-bottom-color: $color12-dark20;
+        border-bottom-width: 0.077em;
+        border-bottom-style: solid;
+        &:first-child {
+          width: 100%;
+        }
+        .title {
+          border-bottom-color: $color12-dark20;
+        }
+        .utilities-title {
+          float: left;
+          margin: 0.769em 0;
+          padding: 0 0.769em;
+          font-family: $font2;
+          font-size: 1.385em;
+          color: $color11;
+        }
+        .link {
+          display: inline-block;
+          height: 100%;
+        }
+        .icon {
+          display:inline-block;
+          float: left;
+          width: 4em;
+          height: 3.692em;
+          color: $color1;
+        }
+        .text {
+          display:inline-block;
+          font-size: 1.231em;
+          color: $color11;
+          padding:0;
+          margin: 0.769em 0;
+        }
+        i {
+          display:block;
+        }
+        .customerservice i {
+          width: 46%;
+          margin: 0.423em auto 0;
+          font-size: 2em;
+        }
+        .email i {
+          width: 42%;
+          margin: 0.591em auto 0;
+          font-size: 1.692em;
+        }
+        .lastviewed i {
+          width: 35%;
+          margin: 0.5em auto 0;
+          font-size: 1.846em;
+        }
+        .login i {
+          width: 38%;
+          margin: 0.423em auto 0;
+          font-size: 2em;
+        }
+        .orderlist i {
+          width: 46%;
+          margin: 0.5em auto 0;
+          font-size: 1.846em;
+        }
+        .orderstatus i,
+        .recipe i {
+          width: 46%;
+          margin: 0.542em auto 0;
+          font-size: 1.846em;
+        }
+        .shop i {
+          width: 31%;
+          margin: 0.462em auto 0;
+          font-size: 2em;
+        }
+
+      }
+    }
+    .desktop-button {
+      position: relative;
+      float: left;
+      clear: both;
+      width: 100%;
+      height: 100%;
+      .link {
+        color: $color11;
+        display: block;
+        font-size: 1.231em;
+        margin: 0.875em auto;
+        text-align: center;
+        width: 15.188em;
+      }
+      span {
+        font-family: $font1;
+        text-transform: uppercase;
+        padding-left:0.385em;
+      }
+    }
+
+    .sm-buttons {
+      float: left;
+      clear: both;
+      width: 100%;
+      padding-top: 1.154em;
+      padding-bottom: 1.154em;
+      .sm-title {
+        width: 7.778em;
+        margin: 0 auto;
+        font-family: $font2;
+        font-size: 1.385em;
+        color: $color11;
+      }
+      .sm-icons {
+        width: 13.769em;
+        height: 100%;
+        margin: 0.923em auto 0;
+      }
+      .sm-icon-link {
+          border-radius: 1.923em;
+          display: block;
+          float: left;
+          height: 100%;
+          margin-left: 1.077em;
+          width: 3.846em;
+      }
+      .sm-icon {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: $color12;
+      }
+      .fb {
+        background-color: $color-fb;
+        margin-left:0em;
+        .sm-icon {
+          width: 1.724em;
+          height: 1.724em;
+          padding-top: 0.154em;
+          font-size: 2.231em;
+          /* text-indent: -0.077em; */
+        }
+      }
+      .tw {
+        background-color: $color-tw;
+        .sm-icon {
+          width: 1.724em;
+          height: 1.724em;
+          padding-top: 0.154em;
+          font-size: 2.231em;
+        }
+      }
+     
+      .yt {
+        background-color: $color-yt;
+      }
+      .yt .sm-icon {
+        width: 1.724em;
+        height: 1.724em;
+        padding-top: 0.115em;
+        font-size: 2.231em;
+        /* text-indent: -2px; */
+      }
+    }
+  }
+  footer.mob-footer-main {
+    float: left;
+    clear: both;
+    width: 100%;
+    padding-top: 0.769em;
+    .items {
+      text-align:center;
+      margin:0 auto;
+      .item {
+        position: relative;
+        display: inline-block;
+        margin: 0.385em 0;
+        padding:0 0.769em;
+      }
+      .link {
+        display: inline-block;
+      }
+
+    }
+    .logo {
+      text-align:center;
+      margin: 1.538em auto 0;
+      display:block;
+      .logo-image {
+        display: block;
+        width: 10.769em;
+        height: 3em;
+        margin: 0 auto; 
+        overflow: hidden;
+      }
+      .logo-pay-off {
+        text-align:center;
+        font: 900 1.231em/1.4 $font3;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        word-spacing: 1px;
+        color: $color1;
+      }
+      .logo-copyright {
+        padding-top: 0.875em;
+        font-size: 1.231em;
+        text-align: center;
+      }
+    }
+  }
+}
+@media(max-width: 500px) {
+  /*
+HEADER HANOS
+========================================================================================*/
+  header.mob-header {
+    section.mob-header-search {
+      .search-button {
+        width: 20%;
+        min-width:2.308em;
+      }
+      .search-input {
+        width: 75%;
+        padding-right:0;
+        height:100%;
+      }
+    }
+  }
+
+  footer.mob-footer-menu {
+    .items {
+      .item {
+        width:100%;
+      }
+      .border-right {
+        border-right:none;
+      }
+    }
+  }
+}
+
+@media(max-width: 320px) {
+  footer.mob-footer-main {
+    .items {
+      .item {
+        width:100%;
+      }
+      .border-right {
+        border-right:none;
+      }
+    }
+    .logo {
+      .logo-image {
+        height:2.308em;
+      }
+      .logo-pay-off {
+        display:none;
+      }
+      .logo-copyright {
+        padding-top:0.439em;
+      }
+    }
+  }
+}

@@ -1,42 +1,66 @@
 extends layout/layout
 include mixins/placeholders
 block content
-    .row
-      .large-8.columns
-        .panel
-          h2 Welkom to ChicksRock.info!
-          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae hic, eum eligendi magni illum? Provident sapiente aperiam, modi, voluptatum, fuga officiis cumque, adipisci veritatis optio illo voluptate cum eos deleniti.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum excepturi et maiores corporis nisi veritatis quaerat dignissimos sapiente ipsam, eos, veniam, accusantium officia repellat dolor rerum tempore delectus enim minima!
-          p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ex sapiente fugiat earum voluptatem laudantium optio reiciendis iste voluptatum veniam doloremque qui totam natus culpa ab distinctio deserunt, commodi cum.
+    //- .row
+    //-   .large-8.columns
+    //-     .panel
+    //-       h2 Welkom to ChicksRock.info!
+    //-       p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae hic, eum eligendi magni illum? Provident sapiente aperiam, modi, voluptatum, fuga officiis cumque, adipisci veritatis optio illo voluptate cum eos deleniti.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum excepturi et maiores corporis nisi veritatis quaerat dignissimos sapiente ipsam, eos, veniam, accusantium officia repellat dolor rerum tempore delectus enim minima!
+    //-       p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ex sapiente fugiat earum voluptatem laudantium optio reiciendis iste voluptatum veniam doloremque qui totam natus culpa ab distinctio deserunt, commodi cum.
     
-          a.button.round(href="#") Find out more
-      .large-4.columns
-        img(src="images/chick001.jpg", alt="chick001")
-    hr
-    .row
-      .large12.columns
-        h3 What is ChicksRock.info?
-        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis perspiciatis quod rerum! Quasi unde voluptates placeat dicta doloribus tempore necessitatibus dolorum nam, sed, molestiae harum quo consequuntur eos. Suscipit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ea voluptatem aut, et harum suscipit aperiam. Molestiae asperiores architecto, numquam quaerat perferendis quo tenetur aut quasi itaque magnam eligendi, ducimus!
-    hr
-    .row
-      .large-12.column
-        h3 Our Chicks that rule
-          ul.large-block-grid-4
-            li
-              img(src="images/chick006.jpg" alt="chick006") 
-            li
-              img(src="images/chick002.jpg" alt="chick002") 
-            li
-              img(src="images/chick004.jpg" alt="chick004") 
-            li
-              img(src="images/chick005.jpg" alt="chick005") 
-    .row
-      .large-12.column
-        .hero-unit
-          h1 'Articles from template'
-          p You now have
-          ul
-            li HTML5 Boilerplate
-            li Modernizr
-    .row
-      .large-12.column
-        mixin kitten(980,300,0,'cuteKitten')
+    //-       a.button.round(href="#") Find out more
+    //-   .large-4.columns
+    //-     img(src="images/chick001.jpg", alt="chick001")
+    //- hr
+    //- .row
+    //-   .large12.columns
+    //-     h3 What is ChicksRock.info?
+    //-     p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nobis perspiciatis quod rerum! Quasi unde voluptates placeat dicta doloribus tempore necessitatibus dolorum nam, sed, molestiae harum quo consequuntur eos. Suscipit.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ea voluptatem aut, et harum suscipit aperiam. Molestiae asperiores architecto, numquam quaerat perferendis quo tenetur aut quasi itaque magnam eligendi, ducimus!
+    //- hr
+    //- .row
+    //-   .large-12.column
+    //-     h3 Our Chicks that rule
+    //-       ul.large-block-grid-4
+    //-         li
+    //-           img(src="images/chick006.jpg" alt="chick006") 
+    //-         li
+    //-           img(src="images/chick002.jpg" alt="chick002") 
+    //-         li
+    //-           img(src="images/chick004.jpg" alt="chick004") 
+    //-         li
+    //-           img(src="images/chick005.jpg" alt="chick005") 
+    //- .row
+    //-   .large-12.column
+    //-     .hero-unit
+    //-       h1 'Articles from template'
+    //-       p You now have
+    //-       ul
+    //-         li HTML5 Boilerplate
+    //-         li Modernizr
+    //- .row
+    //-   .large-12.column
+    //-     mixin kitten(980,300,0,'cuteKitten')
+block mob-slider
+  section.mob-header-slider
+    #owl-example.owl-carousel.items
+      .item
+        img.lazyOwl.image-1(src='images/20140819_624x272@2x_zomerwijnen-624x272.png', data-rimage='data-rimage', data-src='images/20140819_624x272@2x_zomerwijnen-624x272.png', data-srcat2x='images/20140819_624x272@2x_zomerwijnen-624x272@2x.png')
+      .item 
+        img.lazyOwl.image-2(src='images/20140819_624x272@2x_inglorious_fruits-624x272.png', data-rimage='data-rimage', data-src='images/20140819_624x272@2x_inglorious_fruits-624x272.png', data-srcat2x='images/20140819_624x272@2x_inglorious_fruits-624x272@2x.png')
+      .item  
+        img.lazyOwl.image-3(src='images/20140819_624x272@2x_josper-624x272.png', data-rimage='data-rimage', data-src='images/20140819_624x272@2x_josper-624x272.png', data-srcat2x='images/20140819_624x272@2x_josper-624x272@2x.png')
+      .item 
+        img.lazyOwl.image-4(src='images/20140819_624x272@2x_wereldse_keuze-624x272.png', data-rimage='data-rimage', data-src='images/20140819_624x272@2x_wereldse_keuze-624x272.png', data-srcat2x='images/20140819_624x272@2x_wereldse_keuze-624x272@2x.png')
+      //- .mob-header-slider-nav
+      //-   img.mob-header-slider-nav-item.mob-header-slider-nav-item-1.js-slider-nav4(src='images/btn-carousel-bullet_2x-13x33-3.png', data-rimage='data-rimage', data-src='images/btn-carousel-bullet_2x-13x33-3.png', data-srcat2x='images/btn-carousel-bullet_2x-13x33-3@2x.png')
+      //-   img.mob-header-slider-nav-item.mob-header-slider-nav-item-2.js-slider-nav3(src='images/btn-carousel-bullet_2x-13x33-2.png', data-rimage='data-rimage', data-src='images/btn-carousel-bullet_2x-13x33-2.png', data-srcat2x='images/btn-carousel-bullet_2x-13x33-2@2x.png')
+      //-   img.mob-header-slider-nav-item.mob-header-slider-nav-item-3.js-slider-nav2(src='images/btn-carousel-bullet_2x-13x33-1.png', data-rimage='data-rimage', data-src='images/btn-carousel-bullet_2x-13x33-1.png', data-srcat2x='images/btn-carousel-bullet_2x-13x33-1@2x.png')
+      //-   img.active.mob-header-slider-nav-item.js-slider-nav1(src='images/btn-carousel-bullet_2x-13x33.png', data-rimage='data-rimage', data-src='images/btn-carousel-bullet_2x-13x33.png', data-srcat2x='images/btn-carousel-bullet_2x-13x33@2x.png')
+
+block mob-content
+
+block scroll-up
+  section.btn-scroll-up
+    a.link
+      i.fn.fa-chevron-up
+      | terug naar boven

@@ -8,101 +8,106 @@
  */
 
 define([
-    'jquery',
-    'modernizr',
-    'underscore',
-    'fastclick',
-    'foundation',
-    'imagesloaded',
-    'enquire',
-    'skrollr',
-    'remfill'    
+  'jquery',
+  'modernizr',
+  'underscore',
+  'fastclick',
+  'foundation',
+  'imagesloaded',
+  'enquire',
+  'skrollr',
+  'remfill'
 ], function($, Modernizr, _, FastClick, imagesLoaded, Enquire, Skrollr, REM) {
-    'use strict';
+  'use strict';
 
-    // Setup variables
-    var $window = $(window);
-	var $slide = $('.homeSlide');
-	var $body = $('body');
-	
-    $(document).foundation({});
-   
-    //$('#myModal').foundation('reveal', 'open');
+  // Setup variables
+  var $window = $(window);
+  var $slide = $('.homeSlide');
+  var $body = $('body');
 
-    
-    //var self = {};
+  $(document).foundation({
+    offcanvas: {
+      open_method: 'overlap_single',
+      close_on_click : false
+    }
+  });
 
-    function init() {
-        if ($slide.length > 0) {
-            //FadeIn all sections   
-            $body.imagesLoaded(function() {
-                setTimeout(function() {
+  //$('#myModal').foundation('reveal', 'open');
 
-                    // Resize sections
-                    adjustWindow();
 
-                    // Fade in sections
-                    $body.removeClass('loading').addClass('loaded');
+  //var self = {};
 
-                    }, 800);
-            });
-            enquire.register("screen and (min-width : 43em;)", initAdjustWindow(), false);
-        };
+  function init() {
+    if ($slide.length > 0) {
+      //FadeIn all sections   
+      $body.imagesLoaded(function() {
+        setTimeout(function() {
 
+          // Resize sections
+          adjustWindow();
+
+          // Fade in sections
+          $body.removeClass('loading').addClass('loaded');
+
+        }, 800);
+      });
+      enquire.register("screen and (min-width : 43em;)", initAdjustWindow(), false);
+    };
+
+  }
+
+  function adjustWindow() {
+
+    // Get window size
+    var winH = $window.height();
+    var winW = $window.width();
+
+    // Keep minimum height 550
+    if (winH <= 550) {
+      winH = 550;
     }
 
-    function adjustWindow() {
+    // Init Skrollr for 768 and up
+    if (winW >= 768) {
 
-        // Get window size
-        var winH = $window.height();
-        var winW = $window.width();
+      // Init Skrollr
+      var s = skrollr.init({
+        forceHeight: false
+      });
 
-        // Keep minimum height 550
-        if (winH <= 550) {
-            winH = 550;
-        }
+      // Resize our slides
+      $slide.height(winH);
 
-        // Init Skrollr for 768 and up
-        if (winW >= 768) {
+      s.refresh($('.homeSlide'));
 
-            // Init Skrollr
-            var s = skrollr.init({
-                forceHeight: false
-            });
+    } else {
 
-            // Resize our slides
-            $slide.height(winH);
-
-            s.refresh($('.homeSlide'));
-
-        } else {
-
-            // Init Skrollr
-            var s = skrollr.init();
-            s.destroy();
-        }
-
-        // Check for touch
-        if (Modernizr.touch) {
-            // Init Skrollr
-            var s = skrollr.init();
-            s.destroy();
-        }
-
+      // Init Skrollr
+      var s = skrollr.init();
+      s.destroy();
     }
 
-    function initAdjustWindow() {
-        return {
-            match: function() {
-                adjustWindow();
-            },
-            unmatch: function() {
-                adjustWindow();
-            }
-        };
+    // Check for touch
+    if (Modernizr.touch) {
+      // Init Skrollr
+      var s = skrollr.init();
+      s.destroy();
     }
 
+  }
+
+  function initAdjustWindow() {
     return {
-        init: init
-    }
+      match: function() {
+        adjustWindow();
+      },
+      unmatch: function() {
+        adjustWindow();
+      }
+    };
+  }
+
+  return {
+    init: init
+  }
 });

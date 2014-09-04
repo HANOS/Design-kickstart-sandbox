@@ -73,6 +73,7 @@
   }
 }
 
+
 /*
 *   Owl Carousel Owl Demo Theme 
 * v1.3.2
@@ -501,5 +502,63 @@
   to {
     opacity: 0;
     transform: scale(1.5);
+  }
+}
+
+/*
+================================ Custom Styling =====================================
+*/
+@media(max-width:768px) {
+  .mob-header-slider {
+    position: relative;
+    float: left;
+    width: 100%;
+    height:auto;
+    .owl-carousel.owl-theme {
+      position: relative;
+      width: 48em;
+      margin: 0 auto;
+      background-color: $color12;
+      overflow: hidden;
+      .owl-controls {
+        bottom: 0.385em;
+        margin-top: 0;
+        position: absolute;
+        width: 100%;
+      }
+      .owl-page span {
+        background-image: image-url("btn-carousel-bullet_2x-13x33.png");
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
+        border-radius: 0;
+        display: block;
+        height: 13px;
+        margin: 0.385em 0.538em;
+        opacity: 0;
+        width: 13px;
+        opacity:1;
+      }
+      .owl-page.active span {
+        background-position: 0% 0%; 
+      }
+    } 
+  } 
+}
+@media(max-width:666px) {
+  .mob-header-slider {
+    .owl-carousel.owl-theme {
+      width: 35.692em;
+    }
+  }
+}
+@media(max-width:500px) {
+  .mob-header-slider  {
+    .owl-carousel.owl-theme {
+      width: 23.308em;
+      .owl-controls {
+        bottom: 0.769em;
+      }
+    }
   }
 }

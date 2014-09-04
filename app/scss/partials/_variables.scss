@@ -7,6 +7,27 @@
 /*Breakpoints*/
 /*Animation*/
 
+$font1:Lato;
+$font2:Lora;
+$font3:Roboto;
+$font4:Oswald;
+
+
+$color-hanos: #57004E;
+$color-kaja: #E31818;
+$color-vangestel: #26979B;
+$color-vanderzee: #0066A4;
+$color-janvanas: #CD1719;
+$color-distrivers: #6AAD3D;
+$color-fourcroy:#003768;
+$color-anytyme:#FE9900;
+$color-kerstpakketten:#22A219;
+$color-cofex:#633212;
+
+$color-fb: #0B64A3;
+$color-tw: #0facc3;
+$color-yt: #d31a1a;
+
 $color1: #57004E; // Purple
 $color2: #FFCD4D; // Yellow
 $color3: #CC3333; // Red
@@ -89,6 +110,7 @@ $color10-light20: lighten($color10, 20%);
 
 $color11-dark5: darken($color11, 5%);
 $color11-dark10: darken($color11, 10%);
+$color11-dark20: darken($color11, 20%);
 $color11-light5: lighten($color11, 5%);
 $color11-light10: lighten($color11, 10%);
 $color11-light15: lighten($color11, 15%);
@@ -109,14 +131,14 @@ $defined-bs-type: border-box !default;
 // ====================================================================
 $XS: 18em; // roughly speaking, around 288px wide with 16px body font
 $S: 30em; // roughly speaking, around 480px wide with 16px body font
-/* $M: 43em; // roughly speaking, around 688px wide with 16px body font
+$M: 48em; // roughly speaking, around 768px wide with 16px body font
 $L: 57em; // roughly speaking, around 912px wide with 16px body font
 $XL: 90em; // roughly speaking, around 1456px wide with 16px body font
- */
-$M: 64em; // roughly speaking, around 688px wide with 16px body font
-$L: 90em; // roughly speaking, around 912px wide with 16px body font
+/*
+$M: 64em; // roughly speaking, around 1024px wide with 16px body font
+$L: 90em; // roughly speaking, around 1456px wide with 16px body font
 $XL: 120em; // roughly speaking, around 1456px wide with 16px body font
-
+*/
 // Default values for text-shadow mixin
 // ====================================================================
 

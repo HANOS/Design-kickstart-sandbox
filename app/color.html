@@ -2,17 +2,18 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]> <html class="no-js ie" lang="en"> <![endif]-->
-<html lang="en" class="no-js">
+<html lang="en" class="no-js js-hasScalableBackground">
   <head>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation 5</title>	<!--[if lt IE 9]>
-    		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-    		<script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
-    		<script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
-    		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
-    	<![endif]-->
+    <title>HANOS Internationale Horeca Groothandel</title><!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+      <script src="//html5base.googlecode.com/svn-history/r38/trunk/js/selectivizr-1.0.3b.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400,700|Lora:400" rel="stylesheet" type="text/css">
     <!-- build:css(.tmp) styles/libraries.css-->
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
     <!-- endbuild-->
@@ -21,144 +22,377 @@
     <!-- endbuild-->
   </head>
   <body>
-    <nav class="top-bar">
-      <ul class="title-area">
-        <li class="name">
-          <h1><i class="fa fa-home fa-fw"><a href="index.html">ChicksRule</a></i></h1>
-        </li>
-      </ul>
-      <section class="top-bar-section">
-        <ul class="right">
-          <li><a href="parallax.html">parallax</a></li>
-          <li><a href="carousel.html">carousel</a></li>
-          <li><a href="child.html">child</a></li>
-          <li><a href="#">Top Chicks</a></li>
-        </ul>
+    <section class="sticky-container show-for-large-up">
+      <header id="header" class="js-header">
+        <section id="brands" class="nav-brands show-for-large-up js-brands-nav">
+          <div class="row">
+            <div class="large-12 columns">
+              <ul class="brands">
+                <li class="brand-column br-col1"><a id="hanos" href="#" class="brand br-ha"><span class="title">HANOS</span><span class="subtitle">Groothandel                  </span></a><a id="kaja" href="#" class="brand br-ka"><span class="title">Kaja</span><span class="subtitle">Inrichting</span></a></li>
+                <li class="brand-column br-col2"><a id="vangestel" href="#" class="brand br-vg"><span class="title">Van gestel</span><span class="subtitle">Apparatuur</span></a><a id="fourcroy" href="#" class="brand br-fc"><span class="title">Fourcroy</span><span class="subtitle">Wijnen</span></a></li>
+                <li class="brand-column br-col3"><a id="janvanas" href="#" class="brand br-jva"><span class="title">Jan van as</span><span class="subtitle">Versvishandel</span></a><a id="distrivers" href="#" class="brand br-di"><span class="title">distrivers</span><span class="subtitle">Zorgcatering</span></a></li>
+                <li class="brand-column br-col4"><a id="vanderzee" href="#" class="brand br-vdz"><span class="title">Van der zee</span><span class="subtitle">Horecaslagerij</span></a><a id="anytyme" href="#" class="brand br-at"><span class="title">Anytyme</span><span class="subtitle">Fastservice</span></a></li>
+                <li class="brand-column br-col5"><a id="kerstpakketten" href="#" class="brand br-kp"><span class="title">kerstpakketten</span><span class="subtitle">Relatiegeschenken</span></a></li>
+              </ul><img id="brand-pointer" alt="brandPointer" src="images/triangle-19x8.gif" data-rimage="data-rimage" data-src="images/triangle-19x8.gif" class="triangle-up-purple js-brand-pointer">
+            </div>
+          </div>
+        </section>
+        <section class="header-actions-payoff-service show-for-large-up">
+          <div class="row">
+            <div class="large-12 columns"><a href="#" class="pay-off">Er gaat een wereld voor u open</a>
+              <div class="service-brands js-toggle-brands"><a href="#" class="service-brands-link"><span class="service-icon icon-brands"><i class="fa fa-angle-double-up"></i></span><span class="service-text text-brands">Onze merken</span><span class="icon-arrow-down"><i class="fa fa-sort-desc"></i></span></a></div>
+              <div class="service-customer"><a href="#" class="service-customer-link"><img src="images/starr.svg" class="service-icon icon-service"><span class="service-text text-customer">Klantenservice</span></a></div>
+              <div class="service-account"><a href="#" class="service-account-link"><span class="service-icon icon-account"><i class="fa fa-user"></i></span><span class="service-text text-account">Mijn hanos.nl</span><span class="icon-arrow-down"><i class="fa fa-sort-desc"></i></span></a></div>
+            </div>
+          </div>
+        </section>
+        <section class="header-corporate show-for-large-up">
+          <div class="row">
+            <div class="large-12 columns"><a href="index.html" class="logo"><img id="hanos-logo" alt="HANOS Internationale Horeca Groothandel" src="images/hanosLogo.svg" class="logo-image"></a>
+              <div class="corp-nav"><a href="#" class="corporatelinks customercard">Klant worden</a><a href="#" class="corporatelinks folders">Courant</a></div><a href="#" class="shopbasket"><img src="images/shoppingChart.svg" class="icon-shopbasket"></a>
+              <form id="search" class="sitesearch">
+                <input placeholder="Zoeken" type="text" class="input-search">
+                <select name="Categories" class="select-search">
+                  <option value="Alle artikelen">Alle artikelen</option>
+                  <option value="AGF">AGF</option>
+                  <option value="Brood en banket">Brood en banket</option>
+                  <option value="Dranken">Dranken</option>
+                  <option value="Kaas, zuivel en eieren">Kaas, zuivel en eieren</option>
+                  <option value="Kruidenierswaren">Kruidenierswaren</option>
+                  <option value="Maaltijden en salades">Maaltijden en salades</option>
+                  <option value="Non-food">Non-food</option>
+                  <option value="Rookwaren">Rookwaren</option>
+                  <option value="Snacks en ijs">Snacks en ijs</option>
+                  <option value="Vis">Vis</option>
+                  <option value="Vlees en vleeswaren">Vlees en vleeswaren</option>
+                  <option value="Wijn en gedistilleerd">Wijn en gedistilleerd</option>
+                  <option value="Wild en gevogelte">Wild en gevogelte</option>
+                  <option value="Was, reiniging en cosmetica">Was, reiniging en cosmetica</option>
+                  <option value="------------------------------------------">------------------------------------------</option>
+                  <option value="Bereidingswijzen">Bereidingswijzen</option>
+                  <option value="Blogs en verhalen">Blogs en verhalen</option>
+                </select>
+                <button type="submit" class="icon icon-search"><i class="fn fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="main-nav show-for-large-up">
+          <div class="contain-to-grid">
+            <nav data-topbar class="top-bar">
+              <section class="top-bar-section">
+                <ul class="left">
+                  <li><a href="#">Aanbiedingen</a></li>
+                  <li><a href="#">Assortiment</a></li>
+                  <li><a href="#">Inspiratie</a></li>
+                  <li><a href="#">Informatie</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Concepten</a></li>
+                  <li class="has-dropdown"><a href="#">Groothandels</a>
+                    <ul class="dropdown">
+                      <li><a href="#">Zwolle</a></li>
+                      <li class="has-dropdown"><a href="#">Apeldoorn</a>
+                        <ul class="dropdown">
+                          <li><a href="#">HANOS Apeldoorn</a></li>
+                          <li><a href="#">HIS</a></li>
+                          <li><a href="#">Kerstpakkettencentrale</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </section>
+            </nav>
+          </div>
+        </section>
+      </header>
+      <section class="main-content sticky-content js-sticky-content">
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color1"><code>$color1-dark10 = darken($color1, 10%); = #240020</code></div>
+          <div class="small-12 large-12 columns color1"><code>$color1-dark5 = darken($color1, 5%); = #3E0037</code></div>
+          <div class="small-12 large-12 columns color1"><code>$color1: #57004e; = #57004E</code></div>
+          <div class="small-12 large-12 columns color1"><code>$color1-light5: lighten($color1, 5%); = #710065</code></div>
+          <div class="small-12 large-12 columns color1"><code>$color1-light10: lighten($color1, 10%); = #8A007C</code></div>
+          <div class="small-12 large-12 columns color1"><code>$color1-light15: lighten($color1, 15%); = #A40093</code></div>
+          <div class="small-12 large-12 columns color1"><code>$color1-light20: lighten($color1, 20%); = #BD00A9</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color2"><code>$color2-dark1; = darken($color2, 10%); = #FFBF1A</code></div>
+          <div class="small-12 large-12 columns color2"><code>$color2-dark5; = darken($color2, 5%); = #FFC633</code></div>
+          <div class="small-12 large-12 columns color2"><code>$color2; = #FFCD4D</code></div>
+          <div class="small-12 large-12 columns color2"><code>$color2-light5; = lighten($color2, 5%); = #FFD466</code></div>
+          <div class="small-12 large-12 columns color2"><code>$color2-light10; = lighten($color2, 10%); = #FFDB80</code></div>
+          <div class="small-12 large-12 columns color2"><code>$color2-light15; = lighten($color2, 15%); = #FFE29A</code></div>
+          <div class="small-12 large-12 columns color2"><code>$color2-light20; = lighten($color2, 20%); = #FFEAB3</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color3"><code>$color3-dark10: darken($color3, 10%); = #A32929</code></div>
+          <div class="small-12 large-12 columns color3"><code>$color3-dark5: darken($color3, 5%); = #B82E2E</code></div>
+          <div class="small-12 large-12 columns color3"><code>$color3; = #CC3333</code></div>
+          <div class="small-12 large-12 columns color3"><code>$color3-light5: lighten($color3, 5%); = #D14747</code></div>
+          <div class="small-12 large-12 columns color3"><code>$color3-light10: lighten($color3, 10%); = #D65C5C</code></div>
+          <div class="small-12 large-12 columns color3"><code>$color3-light15: lighten($color3, 15%); = #DB7070</code></div>
+          <div class="small-12 large-12 columns color3"><code>$color3-light20: lighten($color3, 20%); = #E08585</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color4"><code>$color4-dark10: darken($color4, 10%); = #197612</code></div>
+          <div class="small-12 large-12 columns color4"><code>$color4-dark5: darken($color4, 5%); = #1D8C16</code></div>
+          <div class="small-12 large-12 columns color4"><code>$color4; = #22A219</code></div>
+          <div class="small-12 large-12 columns color4"><code>$color4-light5: lighten($color4, 5%); = #27B81C</code></div>
+          <div class="small-12 large-12 columns color4"><code>$color4-light10: lighten($color4, 10%); = #2BCE20</code></div>
+          <div class="small-12 large-12 columns color4"><code>$color4-light15: lighten($color4, 15%); = #35DE29</code></div>
+          <div class="small-12 large-12 columns color4"><code>$color4-light20: lighten($color4, 20%); = #4AE140</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color5"><code>$color5-dark10: darken($color5, 10%); = #0184FF</code></div>
+          <div class="small-12 large-12 columns color5"><code>$color5-dark5: darken($color5, 5%); = #1B91FF</code></div>
+          <div class="small-12 large-12 columns color5"><code>$color5; = #349DFF</code></div>
+          <div class="small-12 large-12 columns color5"><code>$color5-light5: lighten($color5, 5%); = #4DA9FF</code></div>
+          <div class="small-12 large-12 columns color5"><code>$color5-light10: lighten($color5, 10%); = #67B6FF</code></div>
+          <div class="small-12 large-12 columns color5"><code>$color5-light15: lighten($color5, 15%); = #80C2FF</code></div>
+          <div class="small-12 large-12 columns color5"><code>$color5-light20: lighten($color5, 20%); = #9ACEFF</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color6"><code>$color6-dark10: darken($color6, 10%); = #C27614</code></div>
+          <div class="small-12 large-12 columns color6"><code>$color6-dark5: darken($color6, 5%); = #D98416</code></div>
+          <div class="small-12 large-12 columns color6"><code>$color6; = #E89121</code></div>
+          <div class="small-12 large-12 columns color6"><code>$color6-light5: lighten($color6, 5%); = #EA9C38</code></div>
+          <div class="small-12 large-12 columns color6"><code>$color6-light10: lighten($color6, 10%); = #EDA84F</code></div>
+          <div class="small-12 large-12 columns color6"><code>$color6-light15: lighten($color6, 15%); = #EFB366</code></div>
+          <div class="small-12 large-12 columns color6"><code>$color6-light20: lighten($color6, 20%); = #F2BF7D</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color7"><code>$color7-dark10: darken($color7, 10%); = #00CCCC</code></div>
+          <div class="small-12 large-12 columns color7"><code>$color7-dark5: darken($color7, 5%); = #00E5E6</code></div>
+          <div class="small-12 large-12 columns color7"><code>$color7; = #00FFFF</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color8"><code>$color8-dark10: darken($color8, 10%); = #0000CC</code></div>
+          <div class="small-12 large-12 columns color8"><code>$color8-dark5: darken($color8, 5%); = #0000E6</code></div>
+          <div class="small-12 large-12 columns color8"><code>$color8; = #0000FF</code></div>
+          <div class="small-12 large-12 columns color8"><code>$color8-light5: lighten($color8, 5%); = #1A1AFF</code></div>
+          <div class="small-12 large-12 columns color8"><code>$color8-light10: lighten($color8, 10%); = #3333FF</code></div>
+          <div class="small-12 large-12 columns color8"><code>$color8-light15: lighten($color8, 15%); = #4D4DFF</code></div>
+          <div class="small-12 large-12 columns color8"><code>$color8-light20: lighten($color8, 20%); = #6666FF</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color9"><code>$color9-dark10: darken($color9, 10%); = #6600CC</code></div>
+          <div class="small-12 large-12 columns color9"><code>$color9-dark5: darken($color9, 5%); = #7200E6</code></div>
+          <div class="small-12 large-12 columns color9"><code>$color9; = #7F00FF</code></div>
+          <div class="small-12 large-12 columns color9"><code>$color9-light5: lighten($color9, 5%); = #8C1AFF</code></div>
+          <div class="small-12 large-12 columns color9"><code>$color9-light10: lighten($color9, 10%); = #9933FF</code></div>
+          <div class="small-12 large-12 columns color9"><code>$color9-light15: lighten($color9, 15%); = #A54DFF</code></div>
+          <div class="small-12 large-12 columns color9"><code>$color9-light20: lighten($color9, 20%); = #B266FF</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color10"><code>$color10-dark10: darken($color10, 10%); = #CC00CC</code></div>
+          <div class="small-12 large-12 columns color10"><code>$color10-dark5: darken($color10, 5%); = #E600E5</code></div>
+          <div class="small-12 large-12 columns color10"><code>$color10; = #FF00FF</code></div>
+          <div class="small-12 large-12 columns color10"><code>$color10-light5: lighten($color10, 5%); = #FF1AFF</code></div>
+          <div class="small-12 large-12 columns color10"><code>$color10-light10: lighten($color10, 10%); = #FF33FF</code></div>
+          <div class="small-12 large-12 columns color10"><code>$color10-light15: lighten($color10, 15%); = #FF4DFF</code></div>
+          <div class="small-12 large-12 columns color10"><code>$color10-light20: lighten($color10, 20%); = #FF66FF</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color11"><code>$color11-dark10: darken($color11, 10%); = #1A1A1A</code></div>
+          <div class="small-12 large-12 columns color11"><code>$color11-dark5: darken($color11, 5%); = #262626</code></div>
+          <div class="small-12 large-12 columns color11"><code>$color11; = #333333</code></div>
+          <div class="small-12 large-12 columns color11"><code>$color11-light5: lighten($color11, 5%); = #404040</code></div>
+          <div class="small-12 large-12 columns color11"><code>$color11-light10: lighten($color11, 10%); = #4D4D4D</code></div>
+          <div class="small-12 large-12 columns color11"><code>$color11-light15: lighten($color11, 15%); = #595959</code></div>
+          <div class="small-12 large-12 columns color11"><code>$color11-light20: lighten($color11, 20%); = #666666</code></div>
+          <hr>
+        </div>
+        <div class="row colorPalette">
+          <div class="small-12 large-12 columns color12"><code>$color12; = #FFFFFF</code></div>
+          <div class="small-12 large-12 columns color12"><code>$color12-dark5: darken($color12, 5%); = #F2F2F2</code></div>
+          <div class="small-12 large-12 columns color12"><code>$color12-dark10: darken($color12, 10%); = #E6E6E6</code></div>
+          <div class="small-12 large-12 columns color12"><code>$color12-dark15: darken($color12, 15%); = #D9D9D9</code></div>
+          <div class="small-12 large-12 columns color12"><code>$color12-dark20: darken($color12, 20%); = #CCCCCC</code></div>
+        </div>
       </section>
-    </nav>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color1"><code>$color1-dark10 = darken($color1, 10%); = #240020</code></div>
-      <div class="small-12 large-12 columns color1"><code>$color1-dark5 = darken($color1, 5%); = #3E0037</code></div>
-      <div class="small-12 large-12 columns color1"><code>$color1: #57004e; = #57004E</code></div>
-      <div class="small-12 large-12 columns color1"><code>$color1-light5: lighten($color1, 5%); = #710065</code></div>
-      <div class="small-12 large-12 columns color1"><code>$color1-light10: lighten($color1, 10%); = #8A007C</code></div>
-      <div class="small-12 large-12 columns color1"><code>$color1-light15: lighten($color1, 15%); = #A40093</code></div>
-      <div class="small-12 large-12 columns color1"><code>$color1-light20: lighten($color1, 20%); = #BD00A9</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color2"><code>$color2-dark1; = darken($color2, 10%); = #FFBF1A</code></div>
-      <div class="small-12 large-12 columns color2"><code>$color2-dark5; = darken($color2, 5%); = #FFC633</code></div>
-      <div class="small-12 large-12 columns color2"><code>$color2; = #FFCD4D</code></div>
-      <div class="small-12 large-12 columns color2"><code>$color2-light5; = lighten($color2, 5%); = #FFD466</code></div>
-      <div class="small-12 large-12 columns color2"><code>$color2-light10; = lighten($color2, 10%); = #FFDB80</code></div>
-      <div class="small-12 large-12 columns color2"><code>$color2-light15; = lighten($color2, 15%); = #FFE29A</code></div>
-      <div class="small-12 large-12 columns color2"><code>$color2-light20; = lighten($color2, 20%); = #FFEAB3</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color3"><code>$color3-dark10: darken($color3, 10%); = #A32929</code></div>
-      <div class="small-12 large-12 columns color3"><code>$color3-dark5: darken($color3, 5%); = #B82E2E</code></div>
-      <div class="small-12 large-12 columns color3"><code>$color3; = #CC3333</code></div>
-      <div class="small-12 large-12 columns color3"><code>$color3-light5: lighten($color3, 5%); = #D14747</code></div>
-      <div class="small-12 large-12 columns color3"><code>$color3-light10: lighten($color3, 10%); = #D65C5C</code></div>
-      <div class="small-12 large-12 columns color3"><code>$color3-light15: lighten($color3, 15%); = #DB7070</code></div>
-      <div class="small-12 large-12 columns color3"><code>$color3-light20: lighten($color3, 20%); = #E08585</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color4"><code>$color4-dark10: darken($color4, 10%); = #197612</code></div>
-      <div class="small-12 large-12 columns color4"><code>$color4-dark5: darken($color4, 5%); = #1D8C16</code></div>
-      <div class="small-12 large-12 columns color4"><code>$color4; = #22A219</code></div>
-      <div class="small-12 large-12 columns color4"><code>$color4-light5: lighten($color4, 5%); = #27B81C</code></div>
-      <div class="small-12 large-12 columns color4"><code>$color4-light10: lighten($color4, 10%); = #2BCE20</code></div>
-      <div class="small-12 large-12 columns color4"><code>$color4-light15: lighten($color4, 15%); = #35DE29</code></div>
-      <div class="small-12 large-12 columns color4"><code>$color4-light20: lighten($color4, 20%); = #4AE140</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color5"><code>$color5-dark10: darken($color5, 10%); = #0184FF</code></div>
-      <div class="small-12 large-12 columns color5"><code>$color5-dark5: darken($color5, 5%); = #1B91FF</code></div>
-      <div class="small-12 large-12 columns color5"><code>$color5; = #349DFF</code></div>
-      <div class="small-12 large-12 columns color5"><code>$color5-light5: lighten($color5, 5%); = #4DA9FF</code></div>
-      <div class="small-12 large-12 columns color5"><code>$color5-light10: lighten($color5, 10%); = #67B6FF</code></div>
-      <div class="small-12 large-12 columns color5"><code>$color5-light15: lighten($color5, 15%); = #80C2FF</code></div>
-      <div class="small-12 large-12 columns color5"><code>$color5-light20: lighten($color5, 20%); = #9ACEFF</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color6"><code>$color6-dark10: darken($color6, 10%); = #C27614</code></div>
-      <div class="small-12 large-12 columns color6"><code>$color6-dark5: darken($color6, 5%); = #D98416</code></div>
-      <div class="small-12 large-12 columns color6"><code>$color6; = #E89121</code></div>
-      <div class="small-12 large-12 columns color6"><code>$color6-light5: lighten($color6, 5%); = #EA9C38</code></div>
-      <div class="small-12 large-12 columns color6"><code>$color6-light10: lighten($color6, 10%); = #EDA84F</code></div>
-      <div class="small-12 large-12 columns color6"><code>$color6-light15: lighten($color6, 15%); = #EFB366</code></div>
-      <div class="small-12 large-12 columns color6"><code>$color6-light20: lighten($color6, 20%); = #F2BF7D</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color7"><code>$color7-dark10: darken($color7, 10%); = #00CCCC</code></div>
-      <div class="small-12 large-12 columns color7"><code>$color7-dark5: darken($color7, 5%); = #00E5E6</code></div>
-      <div class="small-12 large-12 columns color7"><code>$color7; = #00FFFF</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color8"><code>$color8-dark10: darken($color8, 10%); = #0000CC</code></div>
-      <div class="small-12 large-12 columns color8"><code>$color8-dark5: darken($color8, 5%); = #0000E6</code></div>
-      <div class="small-12 large-12 columns color8"><code>$color8; = #0000FF</code></div>
-      <div class="small-12 large-12 columns color8"><code>$color8-light5: lighten($color8, 5%); = #1A1AFF</code></div>
-      <div class="small-12 large-12 columns color8"><code>$color8-light10: lighten($color8, 10%); = #3333FF</code></div>
-      <div class="small-12 large-12 columns color8"><code>$color8-light15: lighten($color8, 15%); = #4D4DFF</code></div>
-      <div class="small-12 large-12 columns color8"><code>$color8-light20: lighten($color8, 20%); = #6666FF</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color9"><code>$color9-dark10: darken($color9, 10%); = #6600CC</code></div>
-      <div class="small-12 large-12 columns color9"><code>$color9-dark5: darken($color9, 5%); = #7200E6</code></div>
-      <div class="small-12 large-12 columns color9"><code>$color9; = #7F00FF</code></div>
-      <div class="small-12 large-12 columns color9"><code>$color9-light5: lighten($color9, 5%); = #8C1AFF</code></div>
-      <div class="small-12 large-12 columns color9"><code>$color9-light10: lighten($color9, 10%); = #9933FF</code></div>
-      <div class="small-12 large-12 columns color9"><code>$color9-light15: lighten($color9, 15%); = #A54DFF</code></div>
-      <div class="small-12 large-12 columns color9"><code>$color9-light20: lighten($color9, 20%); = #B266FF</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color10"><code>$color10-dark10: darken($color10, 10%); = #CC00CC</code></div>
-      <div class="small-12 large-12 columns color10"><code>$color10-dark5: darken($color10, 5%); = #E600E5</code></div>
-      <div class="small-12 large-12 columns color10"><code>$color10; = #FF00FF</code></div>
-      <div class="small-12 large-12 columns color10"><code>$color10-light5: lighten($color10, 5%); = #FF1AFF</code></div>
-      <div class="small-12 large-12 columns color10"><code>$color10-light10: lighten($color10, 10%); = #FF33FF</code></div>
-      <div class="small-12 large-12 columns color10"><code>$color10-light15: lighten($color10, 15%); = #FF4DFF</code></div>
-      <div class="small-12 large-12 columns color10"><code>$color10-light20: lighten($color10, 20%); = #FF66FF</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color11"><code>$color11-dark10: darken($color11, 10%); = #1A1A1A</code></div>
-      <div class="small-12 large-12 columns color11"><code>$color11-dark5: darken($color11, 5%); = #262626</code></div>
-      <div class="small-12 large-12 columns color11"><code>$color11; = #333333</code></div>
-      <div class="small-12 large-12 columns color11"><code>$color11-light5: lighten($color11, 5%); = #404040</code></div>
-      <div class="small-12 large-12 columns color11"><code>$color11-light10: lighten($color11, 10%); = #4D4D4D</code></div>
-      <div class="small-12 large-12 columns color11"><code>$color11-light15: lighten($color11, 15%); = #595959</code></div>
-      <div class="small-12 large-12 columns color11"><code>$color11-light20: lighten($color11, 20%); = #666666</code></div>
-      <hr>
-    </div>
-    <div class="row colorPalette">
-      <div class="small-12 large-12 columns color12"><code>$color12; = #FFFFFF</code></div>
-      <div class="small-12 large-12 columns color12"><code>$color12-dark5: darken($color12, 5%); = #F2F2F2</code></div>
-      <div class="small-12 large-12 columns color12"><code>$color12-dark10: darken($color12, 10%); = #E6E6E6</code></div>
-      <div class="small-12 large-12 columns color12"><code>$color12-dark15: darken($color12, 15%); = #D9D9D9</code></div>
-      <div class="small-12 large-12 columns color12"><code>$color12-dark20: darken($color12, 20%); = #CCCCCC</code></div>
-    </div>
-    	<!-- ref:remove -->
-    		<script data-main="js/config" src="bower_components/requirejs/require.js"></script>
-    	<!-- endref -->
-    	<!-- build:js({app,.tmp}) scripts/main.js -->
-    	<!--<script src="../dist/scripts/main.js"></script>-->
-    	<!-- endbuild -->
-    	<!-- build:js scripts/vendor/skrollr.ie.min.js -->
-    	<!--[if lt IE 9]>
-    		<script src="bower_components/skrollr-ie/dist/skrollr.ie.min.js"></script>
-    	<![endif]-->
-    	<!-- endbuild -->
+      <footer id="footer" class="main-footer show-for-large-up">
+        <div class="row">
+          <div class="large-12 columns">
+            <section class="columns">
+              <div class="column">
+                <h3 class="title">Service</h3>
+                <ul class="list">
+                  <li class="item"><a href="#" class="link">Mijn hanos.nl</a></li>
+                  <li class="item"><a href="#" class="link">Klantenservice</a></li>
+                  <li class="item"><a href="#" class="link">Click and Carry</a></li>
+                  <li class="item"><a href="#" class="link">Bezorging</a></li>
+                  <li class="item"><a href="#" class="link">Openingstijden</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <h3 class="title">it's a concept</h3>
+                <ul class="list">
+                  <li class="item"><a href="#" class="link">Acties & voordeel</a></li>
+                  <li class="item"><a href="#" class="link">Masterclasses & activiteiten</a></li>
+                  <li class="item"><a href="#" class="link">Culinaire advies</a></li>
+                  <li class="item"><a href="#" class="link">Partners</a></li>
+                  <li class="item"><a href="#" class="link">Formules & concepten</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <h3 class="title">de wereld van hanos</h3>
+                <ul class="list">
+                  <li class="item"><a href="#" class="link">Over HANOS</a></li>
+                  <li class="item"><a href="#" class="link">Werken bij HANOS</a></li>
+                  <li class="item"><a href="#" class="link">Nieuws & pers</a></li>
+                  <li class="item"><a href="#" class="link">Klant worden</a></li>
+                  <li class="item"><a href="#" class="link"></a></li>
+                </ul>
+              </div>
+              <div class="column esm">
+                <div class="newsletter">
+                  <form>
+                    <label>Altijd op de hoogte</label>
+                    <p class="newsletter-intro">Via onze nieuwsbrief bent u altijd op de hoogte van de laatste acties, nieuwtjes en meer...</p>
+                    <input placeholder="Uw emailadres" type="text" class="newsletter-email">
+                    <button type="submit" class="newsletter-button">AANMELDEN                  </button>
+                  </form>
+                </div>
+                <div class="sm-icons">
+                  <h3 class="sm-title">Volg ons ook via</h3><a href="#" class="icon"><span class="icon-fb fa fa-facebook"></span></a><a href="#" class="icon"><span class="icon-tw fa fa-twitter"></span></a><a href="#" class="icon"><span class="icon-yt fa fa-youtube"></span></a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </footer>
+      <footer id="footer" class="subfooter show-for-large-up">
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="content">
+              <div class="logo"><a href="#" class="logo-link"><img src="images/hanosLogoWit.svg" class="logo-image"></a></div>
+              <ul class="list">
+                <li class="item"><a href="#" class="link">Algemene voorwaarden</a></li>
+                <li class="item"><a href="#" class="link">Cookies & banners</a></li>
+                <li class="item"><a href="#" class="link">Veilig bestellen</a></li>
+                <li class="item"><a href="#" class="link">Privacy policy</a></li>
+                <li class="item copyright">© 2014 HANOS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <section data-offcanvas class="mob-container hidden-for-large-up off-canvas-wrap">
+      <div class="inner-wrap">
+        <header class="mob-header">
+          <section class="mob-header-main tab-bar">
+            <div class="row">
+              <section class="left-small"><a href="#" class="left-off-canvas-toggle menu-icon"><span></span></a></section>
+              <section class="middle tab-bar-section"><a href="#" class="logo"><img src="images/hanosLogoWit.svg" class="logo-image"></a></section>
+              <section class="right-small"><a href="#" class="right-off-canvas-toggle shopping-chart"><img src="images/shoppingChartWhite.svg" class="shopping-chart-image"></a></section>
+            </div>
+          </section>
+          <section class="mob-header-search">
+            <div class="row">
+              <div class="small-12 medium-12 columns">
+                <form class="search-form">
+                  <input name="siteSearch" placeholder="Zoek in alle artikelen..." type="search" class="search-input">
+                  <button type="submit" class="search-button icon-search"><i class="fn fa-search"></i></button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </header>
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li>
+              <label>Menu</label>
+            </li>
+            <li><a href="#">The Psychohistorians</a></li>
+            <li><a href="#">The Encyclopedists</a></li>
+            <li><a href="#">The Mayors</a></li>
+            <li><a href="#">The Traders</a></li>
+            <li><a href="#">The Merchant Princes</a></li>
+          </ul>
+        </aside>
+        <aside class="right-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li>
+              <label>Winkelwagen</label>
+            </li>
+            <li><a href="#">Hari Seldon</a></li>
+            <li><a href="#">R. Giskard Reventlov</a></li>
+            <li><a href="#">...</a></li>
+          </ul>
+        </aside>
+        <section class="mob-slider"></section>
+        <section class="mob-content">
+        </section><a class="exit-off-canvas"></a>
+      </div>
+      <footer class="mob-footer-menu">
+        <div class="row">
+          <ul class="items utilities">
+            <li class="item title">
+              <h3 class="utilities-title">Mijn HANOS</h3>
+            </li>
+            <li class="item border-right"><a href="#" class="link"><span class="icon login"><i class="fa fa-user"></i></span>
+                <p class="text">Inloggen</p></a></li>
+            <li class="item"><a href="#" class="link"><span class="icon orderlist"><i class="fa fa-clipboard"></i></span>
+                <p class="text">Mijn bestellijst</p></a></li>
+            <li class="item border-right"><a href="#" class="link"><span class="icon shop"><i class="fa fa-map-marker"></i></span>
+                <p class="text">Mijn groothandel</p></a></li>
+            <li class="item"><a href="#" class="link"><span class="icon recipe"><i class="fa fa-heart"></i></span>
+                <p class="text">Mijn recepten</p></a></li>
+            <li class="item border-right"><a href="#" class="link"><span class="icon email"><i class="fa fa-user"></i></span>
+                <p class="text">Email voordeel</p></a></li>
+            <li class="item"><a href="#" class="link"><span class="icon lastviewed"><i class="fa fa-stack-overflow"></i></span>
+                <p class="text">Laast bekeken</p></a></li>
+            <li class="item border-right"><a href="#" class="link"><span class="icon customerservice"><i class="fa fa-star"></i></span>
+                <p class="text">Klantenservice</p></a></li>
+            <li class="item"><a href="#" class="link"><span class="icon orderstatus"><i class="fa fa-truck"></i></span>
+                <p class="text">Bestelstatus</p></a></li>
+          </ul>
+          <div class="sm-buttons">
+            <h3 class="sm-title">Volg ons ook via</h3>
+            <div class="sm-icons"><a href="#" class="sm-icon-link fb"><span class="sm-icon"><i class="fa fa-facebook"></i></span></a><a href="#" class="sm-icon-link tw"><span class="sm-icon"><i class="fa fa-twitter"></i></span></a><a href="#" class="sm-icon-link yt"><span class="sm-icon"><i class="fa fa-youtube"></i></span></a></div>
+          </div>
+          <div class="desktop-button"><a href="#" class="link"><i class="fa fa-desktop"></i><span>Bekijk desktopversie</span></a></div>
+        </div>
+      </footer>
+      <footer class="mob-footer-main">
+        <div class="row">
+          <div class="small-12 medium-12 columns">
+            <ul class="items">
+              <li class="item border-right"><a href="#" class="link">Algemene voorwaarden          </a></li>
+              <li class="item"><a href="#" class="link">Cookies & banners</a></li>
+            </ul>
+            <ul class="items">
+              <li class="item border-right"><a href="#" class="link">Veilig bestellen</a></li>
+              <li class="item"><a href="#" class="link">Privacy policy          </a></li>
+            </ul><a href="#" class="logo"><img src="images/hanosLogo.svg" class="logo-image">
+              <p class="logo-pay-off">internationale horeca groothandel        </p>
+              <p class="logo-copyright">© 2014 HANOS</p></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- ref:remove -->
+      <script data-main="js/config" src="bower_components/requirejs/require.js"></script>
+    <!-- endref -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <!--<script src="../dist/scripts/main.js"></script>-->
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/skrollr.ie.min.js -->
+    <!--[if lt IE 9]>
+      <script src="bower_components/skrollr-ie/dist/skrollr.ie.min.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
   </body>
 </html>

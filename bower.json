@@ -2,7 +2,7 @@
   "name": "hanos",
   "version": "0.0.0",
   "dependencies": {
-    "foundation": ">=5.0.3",
+    "foundation": ">=5.4.3",
     "font-awesome": "~4.1.0",
     "requirejs": "~2.1.11",
     "almond": "~0.2.9",

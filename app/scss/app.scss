@@ -39,6 +39,9 @@ Author: Ronald Konjer
     RESET
 \*------------------------------------*/
 /* http:/necolas.github.com/normalize.css */
+// Normalize
+@import "normalize";
+
 
 // Global Foundation Settings
 @import "settings";
@@ -98,9 +101,10 @@ Author: Ronald Konjer
 @import "partials/type";
 @import "partials/layout";
 @import "partials/structure";
+@import "partials/structure_mob";
 @import "partials/modules";
 @import "partials/slider";
+@import "partials/parallax";
 @import "partials/media";
 @import "partials/forms";
-@import "partials/tables";
-@import "partials/custom"
+@import "partials/tables"

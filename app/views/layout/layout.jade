@@ -3,10 +3,22 @@ doctype html
 | <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 | <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 | <!--[if gt IE 8]> <html class="no-js ie" lang="en"> <![endif]-->
-html(class="no-js", lang="en")
-	include ../partials/htmlHeader
-	body
-		include ../partials/header
-		block content
-		//include ../partials/sub-footer
-		include ../partials/footer
+html(class="no-js js-hasScalableBackground", lang="en")
+  include ../partials/htmlHeader
+  body
+    section.sticky-container.show-for-large-up
+      include ../partials/header
+      section.main-content.sticky-content.js-sticky-content
+        block content
+      include ../partials/footer
+    section.mob-container.hidden-for-large-up.off-canvas-wrap(data-offcanvas)
+      .inner-wrap
+        include ../partials/mob-header
+        block mob-slider
+          section.mob-slider
+        section.mob-content
+          block mob-content
+          block mob-scroll-up
+        a.exit-off-canvas
+      include ../partials/mob-footer
+    include ../partials/htmlFooter
